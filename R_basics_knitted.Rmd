@@ -1,0 +1,30 @@
+---
+title: "r_basics"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Basics as Markdown
+
+
+Install and load a package
+```{r install}
+install.packages("ggplot2", repos = "http://cran.us.r-project.org")
+library(ggplot2)
+```
+
+Detach / Unload a package
+
+```{r unload}
+detach("package:ggplot2", unload=TRUE)
+```
+
+Some other basic commands
+
+``` {r basic}
+version
+sessionInfo()
+```
